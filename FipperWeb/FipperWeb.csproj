@@ -164,12 +164,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin\add.aspx" />
-    <Content Include="admin\edit.aspx" />
-    <Content Include="admin\index.aspx" />
-    <Content Include="admin\list.aspx" />
     <Content Include="admin\uploadImage.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="CSS\styles.css" />
+    <Content Include="admin\edit.aspx" />
     <Content Include="gallery.aspx" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
@@ -177,81 +175,20 @@
     </Content>
     <Content Include="Images\asean-outstanding-business-award.png" />
     <Content Include="Images\fipper_logo_new.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper  urbanite turqoise SLASH grey %28dark%29 77.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper black series black SLASH brown %28glow in the dark%29 31.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper black series black SLASH green 31.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper black series black SLASH grey %28glow in the dark%29 31.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper black series black SLASH red %28glow in the dark%29 31.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper fitt black SLASH red 42.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper fitt blue %28royal%29 SLASH red 42.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper fitt blue %28snorkel%29 SLASH grey 41.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper fitt green %28emerald%29 SLASH grey 42.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper fitt grey %28dark%29 SLASH turqoise 42.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper fitt maroon SLASH blue %2842.90%29.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper fitt turqoise SLASH black 42.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper urbanite black SLASH red 77.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper urbanite blue %28snorkel%29 SLASH turqoise 77.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper urbanite blue SLASH red 77.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper urbanite burgundy SLASH grey 77.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper urbanite green %28army%29 SLASH brown %28dark%29 77.90.jpg" />
-    <Content Include="Images\men%27s flip flop\fipper urbanite maroon SLASH grey %28dark%29 77.90.jpg" />
     <Content Include="Images\sme-award-2013.png" />
     <Content Include="Images\sme-award-2014.png" />
-    <Content Include="Images\unisex%27s flip flop\comfort magenta grey 29.50.jpg" />
-    <Content Include="Images\unisex%27s flip flop\fiiper basic grey 15.90.jpg" />
-    <Content Include="Images\unisex%27s flip flop\fipper basic black 15.90.jpg" />
-    <Content Include="Images\unisex%27s flip flop\fipper basic blue 15.90.jpg" />
-    <Content Include="Images\unisex%27s flip flop\fipper basic dark brown 15.90.jpg" />
-    <Content Include="Images\unisex%27s flip flop\fipper basic turqoise 15.90.jpg" />
-    <Content Include="Images\unisex%27s flip flop\wide black, red SLASH grey 25.50.jpg" />
-    <Content Include="Images\unisex%27s flip flop\wide blue %28ocean%29 SLASH navy SLASH yellow 25.50.jpg" />
-    <Content Include="Images\unisex%27s flip flop\wide green %28army%29 SLASH grey %28dark%29 SLASH brown %28bean%29 25.50.jpg" />
-    <Content Include="Images\unisex%27s flip flop\wide grey %28dark%29 SLASH black SLASH orang 25.50.jpg" />
-    <Content Include="Images\unisex%27s flip flop\wide turqoise SLASH black SLASH red 25.50.jpg" />
-    <Content Include="Images\wedge sandals\flashy green lime 36.90.jpg" />
-    <Content Include="Images\wedge sandals\flashy grey 36.90.jpg" />
-    <Content Include="Images\wedge sandals\flashy navy 36.90.jpg" />
-    <Content Include="Images\wedge sandals\flashy pink soft %2836.90%29.jpg" />
-    <Content Include="Images\wedge sandals\flashy violet light 36.90.jpg" />
-    <Content Include="Images\wedge sandals\flashy white 36.90.jpg" />
-    <Content Include="Images\wedge sandals\glitter brown dark yellow 19.90.jpg" />
-    <Content Include="Images\wedge sandals\glitter greena rmy brown %2819.90%29.jpg" />
-    <Content Include="Images\wedge sandals\glitter grey red %2819.90%29.jpg" />
-    <Content Include="Images\wedge sandals\victoria brown %28 martini%29 SLASH violet %28london%29 %29 76.90.jpg" />
-    <Content Include="Images\wedge sandals\victoria grey SLASH choky %28pink%29 - puchsia.jpg" />
-    <Content Include="Images\wedge sandals\victoria yellow %28 barley%29 SLASH red %28cardilac%29 %29 SLASH red 76.90.jpg" />
-    <Content Include="Images\wedge sandals\victoria yellow %28barley%29 SLASH navuy-blue 76.90.jpg" />
-    <Content Include="Images\wedge sandals\victoria yellow %28barley%29 SLASH red %28cardilac%29 - red 76.90.jpg" />
-    <Content Include="Images\wedge sandals\wedges black 49.90.jpg" />
-    <Content Include="Images\wedge sandals\wedges brown %28havana%29 49.90.jpg" />
-    <Content Include="Images\wedge sandals\wedges grey 49.90.jpg" />
-    <Content Include="Images\wedge sandals\wedges red 36.90.jpg" />
-    <Content Include="Images\women%27s flip flop\belle beown %28light%29 SLASH gold 45.90.jpg" />
-    <Content Include="Images\women%27s flip flop\belle brown %28dark%29 SLASH gold 45.90.jpg" />
-    <Content Include="Images\women%27s flip flop\belle brown SLASH bronze 45.90.jpg" />
-    <Content Include="Images\women%27s flip flop\black-s series black SLASH green %28apple%29 27.90.jpg" />
-    <Content Include="Images\women%27s flip flop\fipper strappy black 31.90.jpg" />
-    <Content Include="Images\women%27s flip flop\fipper strappy green cyprus brown hillary 32.90.jpg" />
-    <Content Include="Images\women%27s flip flop\fipper strappy grey %28dark%29 SLASH red.jpg" />
-    <Content Include="Images\women%27s flip flop\fipper strappy magenta purple 32.90.jpg" />
-    <Content Include="Images\women%27s flip flop\fipper strappy mangoesteen SLASH pink %28light%29 32.90.jpg" />
-    <Content Include="Images\women%27s flip flop\fipper strappy navy yellow 32.90.jpg" />
-    <Content Include="Images\women%27s flip flop\fipper strappy navy yellow.jpg" />
-    <Content Include="Images\women%27s flip flop\fipper strappy peach SLASH turqpise 31.90.jpg" />
-    <Content Include="Images\women%27s flip flop\fipper strappy purple got brown cashmere 31.90.jpg" />
-    <Content Include="Images\women%27s flip flop\flashy black 36.90.jpg" />
-    <Content Include="Images\women%27s flip flop\sophie brown 45.90.jpg" />
-    <Content Include="Images\women%27s flip flop\sophie brown SLASH jade 45.90.jpg" />
     <Content Include="default.aspx" />
+    <Content Include="admin\index.aspx" />
+    <Content Include="admin\list.aspx" />
     <Content Include="login.aspx" />
     <Content Include="Main.Master" />
     <Content Include="admin\Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Admin.Master" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="product.aspx" />
     <Content Include="products.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -295,26 +232,12 @@
     <Compile Include="admin\add.aspx.designer.cs">
       <DependentUpon>add.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\edit.aspx.cs">
-      <DependentUpon>edit.aspx</DependentUpon>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\edit.aspx.designer.cs">
-      <DependentUpon>edit.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="admin\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="admin\list.aspx.cs">
-      <DependentUpon>list.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin\list.aspx.designer.cs">
-      <DependentUpon>list.aspx</DependentUpon>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
     <Compile Include="admin\uploadImage.aspx.cs">
       <DependentUpon>uploadImage.aspx</DependentUpon>
@@ -331,6 +254,13 @@
     </Compile>
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\edit.aspx.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\edit.aspx.designer.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
     </Compile>
     <Compile Include="gallery.aspx.cs">
       <DependentUpon>gallery.aspx</DependentUpon>
@@ -349,6 +279,20 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\list.aspx.cs">
+      <DependentUpon>list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\list.aspx.designer.cs">
+      <DependentUpon>list.aspx</DependentUpon>
+    </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -362,13 +306,6 @@
     </Compile>
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
-    </Compile>
-    <Compile Include="product.aspx.cs">
-      <DependentUpon>product.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="product.aspx.designer.cs">
-      <DependentUpon>product.aspx</DependentUpon>
     </Compile>
     <Compile Include="products.aspx.cs">
       <DependentUpon>products.aspx</DependentUpon>

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FipperWeb.admin {
+namespace FipperWeb {
     
     
     public partial class add {
@@ -31,12 +31,12 @@ namespace FipperWeb.admin {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// btnGoList control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGoList;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

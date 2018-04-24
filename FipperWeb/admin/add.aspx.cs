@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace FipperWeb.admin
+namespace FipperWeb
 {
     public partial class add : System.Web.UI.Page
     {
@@ -14,14 +14,9 @@ namespace FipperWeb.admin
 
         }
 
-        protected void FormView1_PageIndexChanging(object sender, FormViewPageEventArgs e)
-        {
-
-        }
-
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("list.aspx.aspx");
+            Response.Redirect("~/admin/index.aspx");
         }
     }
 }

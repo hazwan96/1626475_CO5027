@@ -22,6 +22,15 @@ namespace FipperWeb {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder Title;
         
         /// <summary>
+        /// css1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlLink css1;
+        
+        /// <summary>
         /// form1 control.
         /// </summary>
         /// <remarks>

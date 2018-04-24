@@ -42,20 +42,23 @@
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="GoogleMap" runat="server">
-    <div id="map"></div>
+    <div id="map">
     <script>
         var map;
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
                 center: { lat: 4.885731, lng: 114.931669 },
-                zoom: 20
+                zoom: 17
             });
             var marker = new google.maps.Marker({
                 position: { lat: 4.885731, lng: 114.931669 },
                 map: map
+
+
             });
         }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-jdsIvmLFyG9l5YKFdAbWzh9O02m42GQ&callback=initMap"
         type="text/javascript"></script>
+    </div>
 </asp:Content>

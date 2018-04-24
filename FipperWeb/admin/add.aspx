@@ -1,98 +1,99 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="add.aspx.cs" Inherits="FipperWeb.admin.add" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="add.aspx.cs" Inherits="FipperWeb.add" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
-    Add products.
+    Add a product!
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource1" DefaultMode="Insert" HorizontalAlign="Center" OnPageIndexChanging="FormView1_PageIndexChanging">
+    <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductId" DataSourceID="SqlDataSource1" DefaultMode="Insert">
         <EditItemTemplate>
-        ProductID:
-            <asp:Label ID="ProductIDLabel1" runat="server" Text='<%# Eval("ProductID") %>' />
+            ProductId:
+            <asp:Label ID="ProductIdLabel1" runat="server" Text='<%# Eval("ProductId") %>' />
             <br />
-        ProductName:
+            ProductName:
             <asp:TextBox ID="ProductNameTextBox" runat="server" Text='<%# Bind("ProductName") %>' />
             <br />
-        ProductType:
+            ProductType:
             <asp:TextBox ID="ProductTypeTextBox" runat="server" Text='<%# Bind("ProductType") %>' />
             <br />
-        ProductPrice:
+            ProductPrice:
             <asp:TextBox ID="ProductPriceTextBox" runat="server" Text='<%# Bind("ProductPrice") %>' />
             <br />
-        ProductQty:
+            ProductQty:
             <asp:TextBox ID="ProductQtyTextBox" runat="server" Text='<%# Bind("ProductQty") %>' />
             <br />
             <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-        &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+            &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </EditItemTemplate>
         <InsertItemTemplate>
-        ProductID:
-            <asp:TextBox ID="ProductIDTextBox" runat="server" Text='<%# Bind("ProductID") %>' />
+            ProductId:
+            <asp:TextBox ID="ProductIdTextBox" runat="server" Text='<%# Bind("ProductId") %>' />
             <br />
-        ProductName:
+            ProductName:
             <asp:TextBox ID="ProductNameTextBox" runat="server" Text='<%# Bind("ProductName") %>' />
             <br />
-        ProductType:
+            ProductType:
             <asp:TextBox ID="ProductTypeTextBox" runat="server" Text='<%# Bind("ProductType") %>' />
             <br />
-        ProductPrice:
+            ProductPrice:
             <asp:TextBox ID="ProductPriceTextBox" runat="server" Text='<%# Bind("ProductPrice") %>' />
             <br />
-        ProductQty:
+            ProductQty:
             <asp:TextBox ID="ProductQtyTextBox" runat="server" Text='<%# Bind("ProductQty") %>' />
             <br />
             <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-        &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+            &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </InsertItemTemplate>
         <ItemTemplate>
-        ProductID:
-            <asp:Label ID="ProductIDLabel" runat="server" Text='<%# Eval("ProductID") %>' />
+            ProductId:
+            <asp:Label ID="ProductIdLabel" runat="server" Text='<%# Eval("ProductId") %>' />
             <br />
-        ProductName:
+            ProductName:
             <asp:Label ID="ProductNameLabel" runat="server" Text='<%# Bind("ProductName") %>' />
             <br />
-        ProductType:
+            ProductType:
             <asp:Label ID="ProductTypeLabel" runat="server" Text='<%# Bind("ProductType") %>' />
             <br />
-        ProductPrice:
+            ProductPrice:
             <asp:Label ID="ProductPriceLabel" runat="server" Text='<%# Bind("ProductPrice") %>' />
             <br />
-        ProductQty:
+            ProductQty:
             <asp:Label ID="ProductQtyLabel" runat="server" Text='<%# Bind("ProductQty") %>' />
             <br />
             <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
-        &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
-        &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
+            &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
+            &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
         </ItemTemplate>
     </asp:FormView>
-<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:db_1626475_co5027_asgConnectionString %>" DeleteCommand="DELETE FROM [tblProduct] WHERE [ProductID] = @original_ProductID AND (([ProductName] = @original_ProductName) OR ([ProductName] IS NULL AND @original_ProductName IS NULL)) AND (([ProductType] = @original_ProductType) OR ([ProductType] IS NULL AND @original_ProductType IS NULL)) AND (([ProductPrice] = @original_ProductPrice) OR ([ProductPrice] IS NULL AND @original_ProductPrice IS NULL)) AND (([ProductQty] = @original_ProductQty) OR ([ProductQty] IS NULL AND @original_ProductQty IS NULL))" InsertCommand="INSERT INTO [tblProduct] ([ProductID], [ProductName], [ProductType], [ProductPrice], [ProductQty]) VALUES (@ProductID, @ProductName, @ProductType, @ProductPrice, @ProductQty)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [tblProduct]" UpdateCommand="UPDATE [tblProduct] SET [ProductName] = @ProductName, [ProductType] = @ProductType, [ProductPrice] = @ProductPrice, [ProductQty] = @ProductQty WHERE [ProductID] = @original_ProductID AND (([ProductName] = @original_ProductName) OR ([ProductName] IS NULL AND @original_ProductName IS NULL)) AND (([ProductType] = @original_ProductType) OR ([ProductType] IS NULL AND @original_ProductType IS NULL)) AND (([ProductPrice] = @original_ProductPrice) OR ([ProductPrice] IS NULL AND @original_ProductPrice IS NULL)) AND (([ProductQty] = @original_ProductQty) OR ([ProductQty] IS NULL AND @original_ProductQty IS NULL))">
-    <DeleteParameters>
-        <asp:Parameter Name="original_ProductID" Type="Int32" />
-        <asp:Parameter Name="original_ProductName" Type="String" />
-        <asp:Parameter Name="original_ProductType" Type="String" />
-        <asp:Parameter Name="original_ProductPrice" Type="Decimal" />
-        <asp:Parameter Name="original_ProductQty" Type="String" />
-    </DeleteParameters>
-    <InsertParameters>
-        <asp:Parameter Name="ProductID" Type="Int32" />
-        <asp:Parameter Name="ProductName" Type="String" />
-        <asp:Parameter Name="ProductType" Type="String" />
-        <asp:Parameter Name="ProductPrice" Type="Decimal" />
-        <asp:Parameter Name="ProductQty" Type="String" />
-    </InsertParameters>
-    <UpdateParameters>
-        <asp:Parameter Name="ProductName" Type="String" />
-        <asp:Parameter Name="ProductType" Type="String" />
-        <asp:Parameter Name="ProductPrice" Type="Decimal" />
-        <asp:Parameter Name="ProductQty" Type="String" />
-        <asp:Parameter Name="original_ProductID" Type="Int32" />
-        <asp:Parameter Name="original_ProductName" Type="String" />
-        <asp:Parameter Name="original_ProductType" Type="String" />
-        <asp:Parameter Name="original_ProductPrice" Type="Decimal" />
-        <asp:Parameter Name="original_ProductQty" Type="String" />
-    </UpdateParameters>
-</asp:SqlDataSource>
-    <asp:Button ID="btnGoList" runat="server" OnClick="Button1_Click" Text="Go to Product List" />
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:db_1626475_co5027_asgConnectionString %>" DeleteCommand="DELETE FROM [tblProduct] WHERE [ProductId] = @original_ProductId AND (([ProductName] = @original_ProductName) OR ([ProductName] IS NULL AND @original_ProductName IS NULL)) AND (([ProductType] = @original_ProductType) OR ([ProductType] IS NULL AND @original_ProductType IS NULL)) AND (([ProductPrice] = @original_ProductPrice) OR ([ProductPrice] IS NULL AND @original_ProductPrice IS NULL)) AND (([ProductQty] = @original_ProductQty) OR ([ProductQty] IS NULL AND @original_ProductQty IS NULL))" InsertCommand="INSERT INTO [tblProduct] ([ProductId], [ProductName], [ProductType], [ProductPrice], [ProductQty]) VALUES (@ProductId, @ProductName, @ProductType, @ProductPrice, @ProductQty)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [tblProduct]" UpdateCommand="UPDATE [tblProduct] SET [ProductName] = @ProductName, [ProductType] = @ProductType, [ProductPrice] = @ProductPrice, [ProductQty] = @ProductQty WHERE [ProductId] = @original_ProductId AND (([ProductName] = @original_ProductName) OR ([ProductName] IS NULL AND @original_ProductName IS NULL)) AND (([ProductType] = @original_ProductType) OR ([ProductType] IS NULL AND @original_ProductType IS NULL)) AND (([ProductPrice] = @original_ProductPrice) OR ([ProductPrice] IS NULL AND @original_ProductPrice IS NULL)) AND (([ProductQty] = @original_ProductQty) OR ([ProductQty] IS NULL AND @original_ProductQty IS NULL))">
+        <DeleteParameters>
+            <asp:Parameter Name="original_ProductId" Type="Int32" />
+            <asp:Parameter Name="original_ProductName" Type="String" />
+            <asp:Parameter Name="original_ProductType" Type="String" />
+            <asp:Parameter Name="original_ProductPrice" Type="Decimal" />
+            <asp:Parameter Name="original_ProductQty" Type="Int32" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="ProductId" Type="Int32" />
+            <asp:Parameter Name="ProductName" Type="String" />
+            <asp:Parameter Name="ProductType" Type="String" />
+            <asp:Parameter Name="ProductPrice" Type="Decimal" />
+            <asp:Parameter Name="ProductQty" Type="Int32" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="ProductName" Type="String" />
+            <asp:Parameter Name="ProductType" Type="String" />
+            <asp:Parameter Name="ProductPrice" Type="Decimal" />
+            <asp:Parameter Name="ProductQty" Type="Int32" />
+            <asp:Parameter Name="original_ProductId" Type="Int32" />
+            <asp:Parameter Name="original_ProductName" Type="String" />
+            <asp:Parameter Name="original_ProductType" Type="String" />
+            <asp:Parameter Name="original_ProductPrice" Type="Decimal" />
+            <asp:Parameter Name="original_ProductQty" Type="Int32" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
+    <br />
+    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Return to Menu" />
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="GoogleMap" runat="server">
 </asp:Content>

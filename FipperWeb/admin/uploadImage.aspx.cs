@@ -26,5 +26,10 @@ namespace FipperWeb.admin
 
             ImageFileUploadControl.SaveAs(saveLocation);
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("list.aspx");
+        }
     }
 }

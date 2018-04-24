@@ -19,21 +19,21 @@
     by The Brand Laureate and Most Recognized Brand in Casual Footwear Excellence in ASEAN Outstanding Business Award 2016.
     Therefore, at Fipper we believe that our 'newness' at shoemaking gives us the freedom to dream. To see footwear with fresh eyes - and deliver
     equal parts fun, fearlessness and functionality.</p>
-    <p>
-        <h2>Product Lists:</h2>
+    
+        <h2>Product Lists:
+            
+    </h2>
         <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
             <HeaderTemplate><ul></HeaderTemplate>
-
             <ItemTemplate>
                 <li>
                     <a href="<%#Eval("ProductId","product.aspx?Id={0}")%>">
                         <%#Eval("ProductName")%>
                     </a>
                 </li>
-            </ItemTemplate>
-
-            <FooterTemplate></ul></FooterTemplate>
+            </ItemTemplate> 
+            <FooterTemplate></ul></FooterTemplate>   
         </asp:Repeater>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1626475_co5027_asgConnectionString %>" SelectCommand="SELECT * FROM [tblProduct]"></asp:SqlDataSource>
-    </p>
+    
 </asp:Content>

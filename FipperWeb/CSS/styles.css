@@ -4,8 +4,23 @@
     margin: 0;
 }
 
+#map {
+    height: 100%;
+    border: 2px solid black;
+    margin: 4px;
+}
+
 body {
     background-color: #6495ed;
+
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background-image: url(../Images/fipper_logo_new.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #page {
@@ -56,14 +71,3 @@ a:hover {
     color: goldenrod;
 }
 
-
-
-/*The style below will apply to the element with an
-id of "header" */
-#header {
-    width: 100%;
-    height: 100px;
-    background-image: url(../Images/fipper_logo_new.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
