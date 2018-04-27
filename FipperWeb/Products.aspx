@@ -25,6 +25,9 @@
         ProductQty:
         <asp:TextBox ID="ProductQtyTextBox" runat="server" Text='<%# Bind("ProductQty") %>' />
         <br />
+        ProductImage:
+        <asp:TextBox ID="ProductImageTextBox" runat="server" Text='<%# Bind("ProductImage") %>' />
+        <br />
         <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
         &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
     </EditItemTemplate>
@@ -44,6 +47,9 @@
         ProductQty:
         <asp:TextBox ID="ProductQtyTextBox" runat="server" Text='<%# Bind("ProductQty") %>' />
         <br />
+        ProductImage:
+        <asp:TextBox ID="ProductImageTextBox" runat="server" Text='<%# Bind("ProductImage") %>' />
+        <br />
         <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
         &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
     </InsertItemTemplate>
@@ -58,10 +64,14 @@
         <asp:Label ID="ProductTypeLabel" runat="server" Text='<%# Bind("ProductType") %>' />
         <br />
         ProductPrice:
-        <asp:Label ID="ProductPriceLabel" runat="server" Text='<%# Convert.ToDecimal(Eval("ProductPrice")).ToString("c") %>' />
+        <asp:Label ID="ProductPriceLabel" runat="server" Text='<%# Bind("ProductPrice") %>' />
         <br />
         ProductQty:
         <asp:Label ID="ProductQtyLabel" runat="server" Text='<%# Bind("ProductQty") %>' />
+        <br />
+
+        ProductImage:
+        <p><asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("ProductImage") %>' /></p>
         <br />
 
     </ItemTemplate>

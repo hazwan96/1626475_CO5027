@@ -168,7 +168,6 @@
     <Content Include="contact.aspx" />
     <Content Include="CSS\styles.css" />
     <Content Include="admin\edit.aspx" />
-    <Content Include="gallery.aspx" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -246,8 +245,8 @@
     <Compile Include="admin\uploadImage.aspx.designer.cs">
       <DependentUpon>uploadImage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="CSS\App_Start\BundleConfig.cs" />
+    <Compile Include="CSS\App_Start\RouteConfig.cs" />
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -261,13 +260,6 @@
     </Compile>
     <Compile Include="admin\edit.aspx.designer.cs">
       <DependentUpon>edit.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="gallery.aspx.cs">
-      <DependentUpon>gallery.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="gallery.aspx.designer.cs">
-      <DependentUpon>gallery.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
