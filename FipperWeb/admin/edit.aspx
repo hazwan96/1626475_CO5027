@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <p>
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductId" DataSourceID="SqlDataSource1" Width="791px">
+        <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductId" DataSourceID="SqlDataSource1" Width="791px" HorizontalAlign="Center">
             <EditItemTemplate>
                 ProductId:
                 <asp:Label ID="ProductIdLabel1" runat="server" Text='<%# Eval("ProductId") %>' />
@@ -26,8 +26,10 @@
                 ProductImage:
                 <asp:TextBox ID="ProductImageTextBox" runat="server" Text='<%# Bind("ProductImage") %>' />
                 <asp:FileUpload ID="FileUpload1" runat="server" />
-                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">LinkButton</asp:LinkButton>
+                <br />
                 <asp:Label ID="Label1" runat="server" Text='<%# Bind("ProductImage") %>'></asp:Label>
+                <br />
+                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Save Image</asp:LinkButton>
                 <br />
                 <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
                 &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
@@ -65,7 +67,7 @@
                 <asp:Label ID="ProductTypeLabel" runat="server" Text='<%# Bind("ProductType") %>' />
                 <br />
                 ProductPrice:
-                <asp:Label ID="ProductPriceLabel" runat="server" Text='<%# Bind("ProductPrice") %>' />
+                <asp:Label ID="ProductPriceLabel" runat="server" Text='<%# Convert.ToDecimal(Eval("ProductPrice")).ToString("c") %>' />
                 <br />
                 ProductQty:
                 <asp:Label ID="ProductQtyLabel" runat="server" Text='<%# Bind("ProductQty") %>' />

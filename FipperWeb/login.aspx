@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
-    <asp:TextBox ID="txtLoginEmail" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+    <asp:TextBox ID="txtLoginEmail" runat="server" ></asp:TextBox>
     <br />
     <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
     <asp:TextBox ID="txtLoginPassword" runat="server" TextMode="Password"></asp:TextBox>

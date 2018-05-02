@@ -20,17 +20,29 @@
     <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
 <p>
     <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
+</p>
+    <p>
     <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+</p>
+    <p>
     <asp:RegularExpressionValidator ID="regEmailField" runat="server" ControlToValidate="txtEmail" ErrorMessage="Invalid Email!" Display="None" SetFocusOnError="True" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
     <asp:RequiredFieldValidator ID="reqEmailField" runat="server" ControlToValidate="txtEmail" Display="None" ErrorMessage="Email Required!"></asp:RequiredFieldValidator>
 </p>
     <p>&nbsp;<asp:Label ID="lblSubject" runat="server" Text="Subject"></asp:Label>
+    </p>
+    <p>
         <asp:TextBox ID="txtSubject" runat="server" placeholder="Subject"></asp:TextBox>
+    </p>
+    <p>
         <asp:RequiredFieldValidator ID="reqSubjectField" runat="server" ControlToValidate="txtSubject" ErrorMessage="Subject Required!" Display="None"></asp:RequiredFieldValidator>
     </p>
     <p>
         <asp:Label ID="lblBody" runat="server" Text="Body"></asp:Label>
+    </p>
+    <p>
         <asp:TextBox ID="txtBody" runat="server" TextMode="MultiLine" placeholder="Body"></asp:TextBox>
+    </p>
+    <p>
         <asp:RequiredFieldValidator ID="reqBodyField" runat="server" ControlToValidate="txtBody" ErrorMessage="Body Required!" Display="None"></asp:RequiredFieldValidator>
     </p>
     <p>

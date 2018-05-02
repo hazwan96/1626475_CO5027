@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
-    Welcome to Admin Panel!
+    Welcome to the Admin Panel! 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <p>

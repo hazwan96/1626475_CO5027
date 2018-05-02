@@ -13,17 +13,6 @@
     <link id="css1" runat="server" href="~/CSS/styles.css" rel="stylesheet" type="text/css" />
      <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-        <style>
-            #map {
-                    height: 100%;
-                    
-            }
-            html, body {
-                    height: 100%;
-                    margin: 0;
-                    padding: 0;
-            }
-        </style>
 </head>
 
 
@@ -31,16 +20,15 @@
     <form id="form1" runat="server">
         <div id="page">
             <div id="header">
+
             </div>
 
             <div id="menu">
                 <ul>
                     <li><a href="~/default.aspx" runat="server">Home</a></li>
-                    <li><a href="~/products.aspx" runat="server">Products</a></li>
-                    <!--<li><a href="~/gallery.aspx" runat="server">Gallery</a></li>-->
+                    <li><a href="~/about.aspx" runat="server">About Us</a></li>
                     <li><a href="~/contact.aspx" runat="server">Contact Us</a></li>
-                    <li><a href="~/login.aspx" runat="server">Login</a></li>
-
+                    <li style="float:right"><a class="active" href="~/admin/login.aspx" runat="server">Login</a></li>
                 </ul>
             </div>
 
@@ -53,14 +41,17 @@
                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
+        </div>
 
+        <asp:ContentPlaceHolder ID="GoogleMap" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <div id="footer">
+                <p>All rights reserved 2018 &copy; <a href="~/admin/index.aspx" runat="server">Admin</a></p>
         </div>
 
     </form>
-
-    <asp:ContentPlaceHolder ID="GoogleMap" runat="server">
-        
-        </asp:ContentPlaceHolder>
 
 </body>
 

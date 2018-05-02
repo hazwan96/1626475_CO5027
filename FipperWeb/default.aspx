@@ -10,16 +10,17 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
 
         <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
-            <HeaderTemplate><ul></HeaderTemplate>
+            <HeaderTemplate><div></HeaderTemplate>
             <ItemTemplate>
-                <li>
-                    <p><asp:Image ID="dspImg" Height="100" Width="100" runat="server" ImageUrl='<%# Eval ("ProductImage") %>' /></p>
+                <div>
                     <a href="<%#Eval("ProductId","products.aspx?Id={0}")%>">
-                        <%#Eval("ProductName")%>
+                    <p><asp:Image ID="dspImg" Height="100" Width="100" runat="server" ImageUrl='<%# Eval ("ProductImage") %>' /></p>
                     </a>
-                </li>
+                        <p>Product Name: <%#Eval("ProductName")%></p>
+                        <p>Product Price: <%#Convert.ToDecimal(Eval("ProductPrice")).ToString("c") %></p>
+                </div>
             </ItemTemplate>
-            <FooterTemplate></ul></FooterTemplate>   
+            <FooterTemplate></div></FooterTemplate>   
         </asp:Repeater>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1626475_co5027_asgConnectionString %>" SelectCommand="SELECT * FROM [tblProduct]">
     </asp:SqlDataSource>

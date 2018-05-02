@@ -5,13 +5,14 @@
 }
 
 #map {
-    height: 100%;
-    border: 2px solid black;
-    margin: 4px;
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+    background-color: #6495ed;
 }
 
 body {
-    background-color: #6495ed;
+    background-color: #e46a6b;
 
 }
 
@@ -25,24 +26,74 @@ body {
 
 #page {
     width: 1000px;
+    height: auto;
     margin: auto;
     background-color: #e0ffff;
     min-height: 500px;
 }
 
-#menu {
-    height: 500px;
-    width: 100px;
-    float: left;
+#footer {
     padding-top: 10px;
-    /*background-color: lightslategray;*/
+    width: 1000px;
+    height: 32px;
+    margin: auto;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+#footer a {
+    color: white;
+}
+
+#menu {
+    width: 1000px;
+    height: 50px;
+}
+
+#menu ul {
+    height: 52px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#menu li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+#menu li:last-child {
+    border-right: none;
+}
+
+#menu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#menu li a:hover:not(.active) {
+    background-color: silver;
+}
+
+#menu .active {
+    background-color: silver;
+    color: black;
 }
 
 #content {
-    margin-left: 110px;
-    padding-left: 10px;
-    padding-right: 10px;
     background-color: white;
+    text-align: center;
+}
+
+#content h2 {
     text-align: center;
 }
 
@@ -65,8 +116,3 @@ h2 {
     list-style-type: none;
     padding-left: 10px;
 }
-
-a:hover {
-    color: goldenrod;
-}
-

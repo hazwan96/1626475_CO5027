@@ -23,6 +23,9 @@
                     margin: 0;
                     padding: 0;
             }
+            #menu {
+                height: 50px;
+            }
         </style>
 </head>
 
@@ -36,12 +39,9 @@
             <div id="menu">
                 <ul>
                     <li><a href="~/default.aspx" runat="server">Home</a></li>
-                    <li><a href="~/products.aspx" runat="server">Products</a></li>
-                    <!--<li><a href="~/gallery.aspx" runat="server">Gallery</a></li>-->
+                    <li><a href="~/about.aspx" runat="server">About Us</a></li>
                     <li><a href="~/contact.aspx" runat="server">Contact Us</a></li>
-                    <li><a href="~/login.aspx" runat="server">Login</a></li>
-                    <li><a href="~/admin/index.aspx" runat="server">Admin Panel</a></li>
-
+                    <li style="float:right"><a class="active" href="~/admin/index.aspx" runat="server">Admin Panel</a></li>
                 </ul>
             </div>
 
@@ -61,7 +61,11 @@
 
     <asp:ContentPlaceHolder ID="GoogleMap" runat="server">
         
-        </asp:ContentPlaceHolder>
+    </asp:ContentPlaceHolder>
+
+    <div id="footer">
+        <p>All rights reserved 2018 &copy;</p>
+    </div>
 
 </body>
 

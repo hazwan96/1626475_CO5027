@@ -8,7 +8,7 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductId" DataSourceID="SqlDataSource1">
+    <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductId" DataSourceID="SqlDataSource1" HorizontalAlign="Center">
     <EditItemTemplate>
         ProductId:
         <asp:Label ID="ProductIdLabel1" runat="server" Text='<%# Eval("ProductId") %>' />
@@ -20,7 +20,7 @@
         <asp:TextBox ID="ProductTypeTextBox" runat="server" Text='<%# Bind("ProductType") %>' />
         <br />
         ProductPrice:
-        <asp:TextBox ID="ProductPriceTextBox" runat="server" Text='<%# Bind("ProductPrice") %>' />
+        <asp:TextBox ID="ProductPriceTextBox" runat="server" Text= '<%# Bind("ProductPrice") %>' />
         <br />
         ProductQty:
         <asp:TextBox ID="ProductQtyTextBox" runat="server" Text='<%# Bind("ProductQty") %>' />
@@ -81,4 +81,13 @@
         <asp:QueryStringParameter Name="ProductId" QueryStringField="Id" Type="Int32" />
     </SelectParameters>
 </asp:SqlDataSource>
+    <asp:Label ID="lblQuantity" runat="server" Text="Quantity: " AssociatedControlID="DDLQuantity"></asp:Label>
+    <asp:DropDownList ID="DDLQuantity" runat="server">
+        <asp:ListItem Selected="True">1</asp:ListItem>
+        <asp:ListItem>2</asp:ListItem>
+        <asp:ListItem>3</asp:ListItem>
+    </asp:DropDownList>
+    <br />
+<asp:Button ID="btnPurchase" runat="server" OnClick="btnPurchase_Click" Text="Buy Now!" />
+    <br />
 </asp:Content>

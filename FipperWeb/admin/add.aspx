@@ -5,7 +5,7 @@
     Add a product!
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductId" DataSourceID="SqlDataSource1" DefaultMode="Insert">
+    <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductId" DataSourceID="SqlDataSource1" DefaultMode="Insert" HorizontalAlign="Center">
         <EditItemTemplate>
             ProductId:
             <asp:Label ID="ProductIdLabel1" runat="server" Text='<%# Eval("ProductId") %>' />

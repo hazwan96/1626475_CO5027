@@ -163,8 +163,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.aspx" />
     <Content Include="admin\add.aspx" />
+    <Content Include="user\cart.aspx" />
     <Content Include="admin\uploadImage.aspx" />
+    <Content Include="user\CompletePurchase.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="CSS\styles.css" />
     <Content Include="admin\edit.aspx" />
@@ -224,6 +227,13 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\add.aspx.cs">
       <DependentUpon>add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -238,12 +248,26 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="user\cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\uploadImage.aspx.cs">
       <DependentUpon>uploadImage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin\uploadImage.aspx.designer.cs">
       <DependentUpon>uploadImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\CompletePurchase.aspx.cs">
+      <DependentUpon>CompletePurchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\CompletePurchase.aspx.designer.cs">
+      <DependentUpon>CompletePurchase.aspx</DependentUpon>
     </Compile>
     <Compile Include="CSS\App_Start\BundleConfig.cs" />
     <Compile Include="CSS\App_Start\RouteConfig.cs" />
