@@ -17,9 +17,15 @@ namespace FipperWeb
 
         protected void btnPurchase_Click(object sender, EventArgs e)
         {
-            
-            decimal postagePackagingCost = 3.95m;
-            decimal productPrice = 10.00m;
+            var prodPrice = ProductFormView.FindControl("ProductPriceLabel") as Label;
+            var priceItem = prodPrice.Text;
+            var prodName = ProductFormView.FindControl("ProductNameLabel") as Label;
+            string nameItem = prodName.Text;
+            var sizeFc = ProductFormView.FindControl("ProductTypeLabel") as Label;
+            string labelItem = sizeFc.Text;
+
+            decimal postagePackagingCost = 3.99m;
+            decimal productPrice = decimal.Parse(priceItem);
             int quantityOfProduct = int.Parse(DDLQuantity.SelectedValue);
             decimal subTotal = (quantityOfProduct * productPrice);
             decimal total = subTotal + postagePackagingCost;
@@ -28,11 +34,12 @@ namespace FipperWeb
             var accessToken = new OAuthTokenCredential(config).GetAccessToken();
             var apiContext = new APIContext(accessToken);
 
+            
             var productItem = new Item();
-            productItem.name = "Product 1";
+            productItem.name = nameItem;
             productItem.currency = "GBP";
             productItem.price = productPrice.ToString();
-            productItem.sku = "PRO1";
+            productItem.sku = "FipPro";
             productItem.quantity = quantityOfProduct.ToString();
 
             var transactionDetails = new Details();
@@ -46,7 +53,7 @@ namespace FipperWeb
             transactionAmount.details = transactionDetails;
 
             var transaction = new Transaction();
-            transaction.description = "Your order of Products";
+            transaction.description = "Products you have ordered!";
             transaction.invoice_number = Guid.NewGuid().ToString();
             transaction.amount = transactionAmount;
             transaction.item_list = new ItemList

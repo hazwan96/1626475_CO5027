@@ -14,7 +14,11 @@
             <ItemTemplate>
                 <div>
                     <a href="<%#Eval("ProductId","products.aspx?Id={0}")%>">
-                    <p><asp:Image ID="dspImg" Height="100" Width="100" runat="server" ImageUrl='<%# Eval ("ProductImage") %>' /></p>
+                    <p>
+                        <div class="pic">
+                            <asp:Image ID="dspImg" runat="server" ImageUrl='<%# Eval ("ProductImage") %>' />
+                        </div>
+                    </p>
                     </a>
                         <p>Product Name: <%#Eval("ProductName")%></p>
                         <p>Product Price: <%#Convert.ToDecimal(Eval("ProductPrice")).ToString("c") %></p>

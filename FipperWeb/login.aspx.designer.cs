@@ -13,13 +13,13 @@ namespace FipperWeb {
     public partial class login {
         
         /// <summary>
-        /// Label1 control.
+        /// lblEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblEmail;
         
         /// <summary>
         /// txtLoginEmail control.
@@ -31,13 +31,13 @@ namespace FipperWeb {
         protected global::System.Web.UI.WebControls.TextBox txtLoginEmail;
         
         /// <summary>
-        /// Label2 control.
+        /// lblPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblPassword;
         
         /// <summary>
         /// txtLoginPassword control.

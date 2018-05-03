@@ -5,10 +5,10 @@
     Welcome to the Login Page!
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
+    <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
     <asp:TextBox ID="txtLoginEmail" runat="server" ></asp:TextBox>
     <br />
-    <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
+    <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
     <asp:TextBox ID="txtLoginPassword" runat="server" TextMode="Password"></asp:TextBox>
     <br />
     <asp:Button ID="btnLogin" runat="server" Text="Log In" OnClick="btnLogin_Click" />

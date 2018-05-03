@@ -65,8 +65,6 @@
             var marker = new google.maps.Marker({
                 position: { lat: 4.885731, lng: 114.931669 },
                 map: map
-
-
             });
         }
     </script>

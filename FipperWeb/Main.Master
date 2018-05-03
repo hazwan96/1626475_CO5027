@@ -28,7 +28,7 @@
                     <li><a href="~/default.aspx" runat="server">Home</a></li>
                     <li><a href="~/about.aspx" runat="server">About Us</a></li>
                     <li><a href="~/contact.aspx" runat="server">Contact Us</a></li>
-                    <li style="float:right"><a class="active" href="~/admin/login.aspx" runat="server">Login</a></li>
+                    <li style="float:right; height: 45px;"><a class="active" href="~/login.aspx" runat="server">Login</a></li>
                 </ul>
             </div>
 
@@ -48,7 +48,9 @@
         </asp:ContentPlaceHolder>
 
         <div id="footer">
-                <p>All rights reserved 2018 &copy; <a href="~/admin/index.aspx" runat="server">Admin</a></p>
+            <p>All rights reserved 2018 &copy; <a href="~/admin/index.aspx" runat="server">Admin</a></p>
+            <p><a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a></p>
         </div>
 
     </form>

@@ -53,6 +53,10 @@ namespace FipperWeb
                 {
                     Response.Redirect("~/admin/index.aspx");
                 }
+                else
+                {
+                    Response.Redirect("~/default.aspx");
+                }
             }
         }
 

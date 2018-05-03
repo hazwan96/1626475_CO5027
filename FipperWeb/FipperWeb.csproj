@@ -187,7 +187,6 @@
     <Content Include="admin\Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Admin.Master" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -240,13 +239,6 @@
     </Compile>
     <Compile Include="admin\add.aspx.designer.cs">
       <DependentUpon>add.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin.Master.cs">
-      <DependentUpon>Admin.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin.Master.designer.cs">
-      <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
     <Compile Include="user\cart.aspx.cs">
       <DependentUpon>cart.aspx</DependentUpon>
