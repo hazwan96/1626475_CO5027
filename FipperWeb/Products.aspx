@@ -70,7 +70,7 @@
         <asp:Label ID="ProductQtyLabel" runat="server" Text='<%# Bind("ProductQty") %>' />
         <br />
         ProductImage:
-        <p><asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("ProductImage") %>' /></p>
+        <p><asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("ProductImage") %>' Alt="Product Images" /></p>
         <br />
 
     </ItemTemplate>

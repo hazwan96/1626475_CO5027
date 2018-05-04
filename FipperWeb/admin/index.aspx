@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="FipperWeb.index1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+    Admin Page
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
     Welcome to the Admin Panel! 

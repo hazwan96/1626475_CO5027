@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="FipperWeb.contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
-    Contact: FipperWeb
+    Contact Us
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
@@ -8,9 +8,9 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    &nbsp
+    &nbsp;
     <p>Reach to us through the below details!</p>
-    &nbsp
+    &nbsp;
     <p>Instagram: Fipper.bn</p>
     <p>Facebook: Fipper.bn</p>
     <p>Email: FipperWeb@mail.com</p>

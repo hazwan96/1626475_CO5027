@@ -29,5 +29,10 @@ namespace FipperWeb
                 li.Text = "~/admin/ProductImages/" + fle.FileName + ".jpg";
             }
         }
+
+        protected void FormView1_PageIndexChanging(object sender, FormViewPageEventArgs e)
+        {
+
+        }
     }
 }

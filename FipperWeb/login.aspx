@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="FipperWeb.login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+    FipperWeb Login
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
     Welcome to the Login Page!

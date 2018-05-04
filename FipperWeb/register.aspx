@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="register.aspx.cs" Inherits="FipperWeb.register" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+    Register!
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
     Welcome to the Register page! 

@@ -66,7 +66,7 @@ namespace FipperWeb
 
             var redirectUrls = new RedirectUrls();
             redirectUrls.cancel_url = "http://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.ApplicationPath + "/Default.aspx";
-            redirectUrls.return_url = "http://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.ApplicationPath + "/CompletePurchase.aspx";
+            redirectUrls.return_url = "http://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.ApplicationPath + "/user/CompletePurchase.aspx";
 
             var payment = Payment.Create(apiContext, new Payment
             {

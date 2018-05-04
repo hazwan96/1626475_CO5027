@@ -16,7 +16,7 @@
                     <a href="<%#Eval("ProductId","products.aspx?Id={0}")%>">
                     <p>
                         <div class="pic">
-                            <asp:Image ID="dspImg" runat="server" ImageUrl='<%# Eval ("ProductImage") %>' />
+                            <asp:Image ID="dspImg" runat="server" ImageUrl='<%# Eval ("ProductImage") %>' Alt="Product Images" />
                         </div>
                     </p>
                     </a>
@@ -26,7 +26,10 @@
             </ItemTemplate>
             <FooterTemplate></div></FooterTemplate>   
         </asp:Repeater>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1626475_co5027_asgConnectionString %>" SelectCommand="SELECT * FROM [tblProduct]">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1626475_co5027_asgConnectionString %>" SelectCommand="SELECT * FROM [tblProduct] WHERE ([ProductQty] &gt; @ProductQty)">
+            <SelectParameters>
+                <asp:Parameter DefaultValue="0" Name="ProductQty" Type="Int32" />
+            </SelectParameters>
     </asp:SqlDataSource>
     
 </asp:Content>

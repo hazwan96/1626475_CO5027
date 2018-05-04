@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="list.aspx.cs" Inherits="FipperWeb.list" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+    Product Lists
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
     View list of Products

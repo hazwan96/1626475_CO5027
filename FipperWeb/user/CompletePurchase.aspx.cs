@@ -33,7 +33,7 @@ namespace FipperWeb
 
                 var executePayment = payment.Execute(apiContext, paymentExecution);
 
-                litInformation.Text = "<p>Your order has been completed</p>";
+                litInformation.Text = "<p>Congratulations, your order has been completed!</p>";
                 btnConfirmPurchase.Visible = false;
             }
         }

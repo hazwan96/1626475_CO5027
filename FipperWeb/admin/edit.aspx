@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="edit.aspx.cs" Inherits="FipperWeb.edit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+    Edit Product
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
     Edit Products

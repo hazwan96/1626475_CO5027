@@ -165,8 +165,6 @@
   <ItemGroup>
     <Content Include="about.aspx" />
     <Content Include="admin\add.aspx" />
-    <Content Include="user\cart.aspx" />
-    <Content Include="admin\uploadImage.aspx" />
     <Content Include="user\CompletePurchase.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="CSS\styles.css" />
@@ -239,20 +237,6 @@
     </Compile>
     <Compile Include="admin\add.aspx.designer.cs">
       <DependentUpon>add.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="user\cart.aspx.cs">
-      <DependentUpon>cart.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="user\cart.aspx.designer.cs">
-      <DependentUpon>cart.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="admin\uploadImage.aspx.cs">
-      <DependentUpon>uploadImage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin\uploadImage.aspx.designer.cs">
-      <DependentUpon>uploadImage.aspx</DependentUpon>
     </Compile>
     <Compile Include="user\CompletePurchase.aspx.cs">
       <DependentUpon>CompletePurchase.aspx</DependentUpon>
